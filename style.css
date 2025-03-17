@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.7;
+    background-color:  #054F77; color: #333;
+  }
+  
+  /* Header */
+  header {
+    background-color: #054F77; /* Azul Escuro */
+    color: white;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 90;
+  }
+
+  #img1{
+    border-radius: 70%;
+    width: 40vw;
+    height: 40vh;
+  }
+
+  #img2{
+    width: 14vw;
+    height: auto;
+  }
+
+  #img3{
+    width: 14vw;
+    height: auto;
+  }
+
+  #img4{
+    width: 14vw;
+    height: 30vh;
+  }
+
+  .about{
+    justify-content: space-around;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+
+  nav ul li {
+    margin: 0 20px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    background-color: #798db8; /* Roxo */
+  }
+
+  /* Seção Início */
+  .section-home {
+    background-color: #054F77; /* Azul Escuro */
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+  }
+
+  .section-home h1 {
+    font-size: 5rem;
+  }
+
+  .section-home p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+  }
+
+  .btn {
+    background-color: #a5adc7; color: white;
+    padding: 10px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: #a5adc7; /* Laranja mais forte */
+  }
+
+  /* Seção Sobre */
+  .section-sobre {
+    background-color: #FFFFFF;
+    padding: 40px 45px;
+    text-align: center;
+  }
+
+  .section-sobre h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .sobre-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .text1{
+    background-color: #FFFFFF;
+    padding: 40px 45px;
+    text-align: center;
+  }
+  .sobre-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left; /* Ajustando o texto para alinhamento à esquerda */
+  }
+
+  .sobre-texto {
+    max-width: 500px; /* Garantindo que o texto não ocupe todo o espaço */
+  }
+  
+  .sobre-content img {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  /* Seção Serviços */
+  .section-servicos {
+    background-color: #e1f0f6;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .section-servicos h2 {
+    font-size: 3rem;
+    margin-bottom: 35px;
+    color: #054F77; /* Azul Escuro */
+  }
+  
+  .servicos-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+  }
+  
+  .servico {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  .servico img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Seção Contato */
+  .section-contato {
+    background-color: #f0f8ff;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .section-contato h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #054F77; /* Azul Escuro */
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    gap: 15px;
+  }
+  
+  form input,
+  form textarea {
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  form textarea {
+    height: 150px;
+    resize: none;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #054F77; /* Azul Escuro */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .section-home {
+      padding: 80px 20px;
+    }
+  
+    .sobre-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .servicos-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  /* Animação de fade-in no título */
+.title {
+  font-size: 5rem;
+  animation: fadeIn 3s ease-out;
+}
+
+/* Animação de digitação */
+.intro-text {
+  font-size: 1.5rem;
+  margin: 20px 0;
+  opacity: 0;
+  animation: typing 2s steps(30) 1s forwards, blink 0.75s step-end infinite;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Efeito de animação no botão */
+.btn {
+  background-color: #a5adc7;
+  color: white;
+  padding: 10px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  animation: buttonFadeIn 2s ease-out;
+}
+
+.btn:hover {
+  background-color: #798db8;
+  transform: scale(1.1);
+}
+
+/* Animação de Fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efeito de digitação */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Efeito de piscamento no texto */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Efeito de Fade-in no botão */
+@keyframes buttonFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Seção Início */
+.section-home {
+  background-color: #054F77;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('seu-video-ou-imagem-de-fundo.jpg') center center no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .section-home {
+    padding: 80px 20px;
+  }
+  
+  .title {
+    font-size: 3rem;
+  }
+
+  .intro-text {
+    font-size: 1.2rem;
+  }
+}
